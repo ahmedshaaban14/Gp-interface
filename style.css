@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Roboto+Slab&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Generate.png);
+    padding: 2px 4%;
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 0;
+    margin-top: -30px;
+}
+
+.Logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-right: 80px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 5s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    
+}
+
+.main {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 0;
+    margin-left: 50px;
+}
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 90px;
+    justify-content: center;
+}
+
+.canvas-container canvas {
+    background-color: white;
+    border: 0 solid #0d0821;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px 9px #9664bc;
+}
+.second-canvas {
+    width: 345px;
+    height: 345px;
+    border-radius: 30px;
+    background-color: white;
+    border: 0 solid #0d0821;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px 9px #9664bc;
+    position: relative;
+}
+.title {
+    width: 340px;
+    display: flex;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    transition: 1s ease;
+
+}
+.title:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+.canvas-container h1,
+.second-canvas-container h1 {
+    font-weight: 350;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.button-group {
+    text-align: center;
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 80px;
+    background-color: white;
+    padding: 8px 8px;
+    cursor: pointer;
+    border: 4px solid #ffffff;
+    border-radius: 30px;
+    transition: 0.7s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    transform: translateY(7px);
+}
+
+
+
+.download {
+    color: #0d0821;
+}
+.fa-upload {
+    z-index: 1111;
+}
+.clicked {
+    background-color: #0d0821;
+    color: white;
+}
+
+.second-canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+
+
+.button-group2 {
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.btn2 {
+    width: 80px;
+    background-color: white;
+    padding: 8px 8px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    transition: 0.7s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+    /* Adds space below each icon */
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.generate {
+    width: 200px;
+    font-size: 30px;
+    padding: 1px 10px;
+}
+
+.btn2:hover {
+    transform: translateY(-7px);
+}
+
+.third-canvas {
+    width: 340px;
+    height: 340px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 0 solid #0d0821;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px 9px #9664bc;
+    position: relative;
+}
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.upload i {
+    margin-bottom: 10px;
+}
